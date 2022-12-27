@@ -1,0 +1,143 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<!-- banner -->
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Outline&family=Homemade+Apple&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Homemade+Apple&display=swap');
+	.banner-top{
+		filter: brightness(100%) !important;
+		background:url(../static/images/aboutus.jpg) no-repeat center;
+		background-blend-mode: normal;
+		background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+	}
+	.text-wh{
+		font-size: 100px !important;
+		font-family: 'Bungee Outline', cursive !important;
+	}
+	.font{
+		font-family: 'Bungee Inline', cursive !important;
+	}
+	.orange{
+		color: #b537c5;
+	}
+</style>
+<section class="banner_w3lspvt" id="home">
+	<div class="csslider infinity" id="slider1">
+	
+				<div class="banner-top">
+					<div class="overlay">
+						<div class="container">
+							<div class="w3layouts-banner-info text-center">
+								<h3 class="text-wh">Welcome to<br>Healthy Farm</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+	</div>
+</section>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Outline&family=Homemade+Apple&family=Montserrat:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap');
+	html body {
+      font-family: 'Montserrat', sans-serif !important;
+  }
+	.heading{
+		font-size: 80px !important;
+		font-weight: 600 !important;
+	}
+	.blog-info{
+		border-radius: 30px;
+		transition: .5s;
+	}
+	.blog-info:hover {
+      transform: scale(1.1);
+    }
+	img{
+		border-radius: 30px;
+	}
+</style>
+<!-- Services -->
+<section class="blog py-5">
+	<div class="container py-md-5">
+		<h3 class="heading mb-sm-5 mb-4 text-center">Our <span class="orange">Services</span></h3>
+		<div class="row blog-grids">
+			<div class="col-lg-4 col-md-6 blog-left mb-lg-0 mb-sm-5 pb-lg-0 pb-5">
+				<img src="{{ url_for('static', filename='images/crop.jpg') }}" class="img-fluid" alt="" />
+				<a href="{{ url_for('crop_recommend') }}">
+					<div class="blog-info">
+
+						<h4>Crop</h4>
+
+						<p class="mt-2"> Recommendation about the type of crops to be cultivated which is best suited
+							for the respective conditions</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6 blog-middle mb-lg-0 mb-sm-5 pb-lg-0 pb-md-5">
+				<img src="{{ url_for('static', filename='images/fer.jpg') }}" class="img-fluid" alt="" />
+				<a href="{{ url_for('fertilizer_recommendation') }}">
+					<div class="blog-info">
+						<h4>Fertilizer</h4>
+						<p class="mt-2">Recommendation about the type of fertilizer best suited for the particular soil
+							and the recommended crop</p>
+					</div>
+				</a>
+			</div>
+			<div class="col-lg-4 col-md-6 blog-right mt-lg-0 mt-5 pt-lg-0 pt-md-5">
+
+				<img src="{{ url_for('static', filename='images/s4.jpg') }}" class="img-fluid" alt="">
+				<a href="{{ url_for('disease_prediction') }}">
+					<div class="blog-info">
+						<h4>Crop Disease</h4>
+						<p class="mt-2">Predicting the name and causes of crop disease and suggestions to cure it</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- //banner -->
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Outline&family=Homemade+Apple&family=Montserrat:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap');
+	html body {
+      font-family: 'Montserrat', sans-serif !important;
+  }
+	img{
+		border-radius: 30px;
+	}
+	.background-img {
+    background: url(../images/20.jpg) no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+}
+</style>
+<!-- core values -->
+<section class="core-value py-5">
+	<div class="container py-md-4">
+		<h3 class="heading mb-sm-5 mb-4 text-center"><span class="orange">About</span> Us</h3>
+		<div class="row core-grids">
+			<div class="col-lg-6 core-left">
+				<img src="{{ url_for('static', filename='images/20.jpg') }}" class="img-fluid" alt="" />
+			</div>
+			<div class="col-lg-6 core-right">
+				<p class="mt-3">We use state-of-the-art machine learning and deep learning technologies to help you
+					guide through
+					the entire farming process. Make informed decisions to understand the demographics of your area,
+					understand the
+					factors that affect your crop and keep them healthy for a super awesome successful yield.</p>
+			</div>
+		</div>
+	</div>
+</section>
+</html>
+
+{% endblock %}

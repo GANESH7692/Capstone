@@ -1,0 +1,24 @@
+{% extends 'layout.html' %} {% block body %}
+
+<style>
+  .mt-0 {
+  margin-top: 50 !important;
+}
+  @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Outline&family=Homemade+Apple&family=Montserrat:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap');
+    html body {
+      font-weight: 400;
+      font-family: 'Montserrat', sans-serif !important;
+  }
+</style>
+
+
+<div class="container py-2 mx-auto my-50 h-10 " style="margin: 12rem;">
+  <div class="row">
+      <div class="col-sm py-2 py-md-3">
+          <div class="card card-body" style="justify-content: center; background-color:rgb(12, 0, 39);">
+               <h1 class="text-center"><b>You should grow <i style="color: #b537c5;">{{ prediction }} </i>in your farm</b></h1>
+          </div>
+      </div>
+  </div>
+</div>
+{% endblock %}

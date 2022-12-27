@@ -1,0 +1,8 @@
+numpy
+pandas
+Flask
+scikit-learn
+https://download.pytorch.org/whl/cpu/torch-1.7.1-cp39-cp39-win_amd64.whl
+requests
+Pillow
+gunicorn==20.0.4
